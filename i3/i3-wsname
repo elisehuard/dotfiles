@@ -19,7 +19,5 @@ then
   exit 1
 fi
 
-NUMBEREDNAME="${NUMBER}: ${NAME}"
-
-echo "rename workspace ${NUMBER} to '${NUMBEREDNAME}'"
-i3-msg "rename workspace ${NUMBER} to '${NUMBEREDNAME}'"
+echo 'rename workspace ${NUMBER} to "${NUMBER}: ${NAME}"'
+i3-msg 'rename workspace ${NUMBER} to "${NUMBER}: ${NAME}"'
